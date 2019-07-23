@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-config {
+    top: 0;
+    margin: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #7385d2;
+    /* position: fixed; */
+}
+
+.logo {
+    width: 40%;
+    margin: 0;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.align-section {
+
+}
+
+.align-tracker {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    width: 100%;
+    margin: 10px 0 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.align-btn {
+    display: flex;
+}
+
+.fa-hourglass-start {
+    font-size: 12px;
+    color: 
+}
+
+.fa-utensils {
+    font-size: 12px;
+}
+
+.fa-hourglass-end {
+    font-size: 12px;
+}
