@@ -1,0 +1,23 @@
+{
+  "name": "everytime",
+  "version": "1.0.0",
+  "description": "Projeto do Talent Fest",
+  "main": "firebase-config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcieleadivincula/everytime.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcieleadivincula/everytime/issues"
+  },
+  "homepage": "https://github.com/marcieleadivincula/everytime#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  }
+}
