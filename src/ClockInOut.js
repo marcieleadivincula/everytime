@@ -1,15 +1,14 @@
 // const moment = require('moment');
 const moment = require("moment-business-time");
 
-const nowIn = '2015-02-27T16:30:00Z'
-const nowOut = '2015-02-26T12:00:00Z'
+const checkIn = moment();
+const date = new Date;
+const min = date.getMinutes();
+const checkOut = checkIn.subtractWorkingTime(7, 'hours', min, 'minutes');
 
-function ClockInOut(nowIn, nowOut) {
-    const now = moment();
-
-    console.log(now)
-    console.log(now.subtractWorkingTime(6, 'hours'));
-    console.log(moment(nowIn).workingDiff(moment(nowOut), 'hours'));
+function getWorkedHours() {
+   console.log(checkOut);
 }
 
-ClockInOut(nowIn, nowOut);
+getWorkedHours();
+
