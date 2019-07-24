@@ -25,44 +25,49 @@
     
     <main>
         <section>
-            <ul>
-                <li class="employee-tracker">Bater Ponto</li>
+            <ul class="sub-nav">
+                <li class="employee-tracker active">Bater Ponto</li>
                 <li class="employee-history">Histórico</li>
             </ul>
             
-            <p>Dia tal, hora tal</p>
-            <section class="align-tracker">
-                <button class="btn align-btn" id="check-in">
+            <section class="employee-tracker-option align-tracker">
+                <p class="day-info">Dia tal, hora tal</p>
+                <button class="btn align-btn check-in-style" id="check-in">
                     <i class="fas fa-hourglass-start"></i>
-                    <div>
+                    <div class="align-text-btn">
                         <h4>ENTRADA</h4>
                         <p>Clique para confirnar a Entrada</p>
                     </div>
                 </button>
-                <button class="btn" id="lunch-in">
+                <button class="btn align-btn check-in-lunch-style" id="lunch-in">
                     <i class="fas fa-utensils "></i>
-                    <div>
+                    <div class="align-text-btn">
                         <h4>ALMOÇO</h4>
                         <p>Clique para confirnar o Almoço</p>
                     </div>
                 </button>
-                <button class="btn" id="lunch-out">
+                <button class="btn align-btn check-out-lunch-style" id="lunch-out">
                     <i class="fas fa-utensils "></i>
-                    <div>
+                    <div class="align-text-btn">
                         <h4>RETORNO</h4>
                         <p>Clique para confirnar o Retorno</p>
                     </div>
                 </button>
-                <button class="btn" id="check-out">
+                <button class="btn align-btn check-out-style" id="check-out">
                     <i class="fas fa-hourglass-end"></i>
-                    <div>
+                    <div class="align-text-btn">
                         <h4>SAÍDA</h4>
                         <p>Clique para confirnar a Saída</p>
                     </div>
                 </button>
             </section>
+            
+            <section class="employee-history-option hide">
+                <p>HISTÓRICO</p>
+            </section>
         </section>
         <script type="module" src="./ClockInOut.js"></script>
+        <script src="/js/hide-menu-options.js"></script>
         
     </main>
     
