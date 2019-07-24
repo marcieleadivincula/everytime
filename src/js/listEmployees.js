@@ -1,4 +1,7 @@
 const database = firebase.database();
+<<<<<<< HEAD
+let username = document.querySelector(".");
+=======
 let listEmployees = document.querySelector(".listEmployees")
 const dataEmployee = document.querySelector(".dataEmployee")
 let valueSelect = "";
@@ -7,6 +10,7 @@ listEmployees.addEventListener('change', function () {
   valueSelect = listEmployees.value;
   listEmployee(valueSelect)
 })
+>>>>>>> c3c7c8479b61c0aab1a98904ca4845f6cc2711fa
 
 window.onload = () => {
   getListEmployees();
