@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
@@ -8,13 +8,11 @@
   <script src="https://kit.fontawesome.com/bfa4c912f5.js"></script>
   <link rel="stylesheet" type="text/css" href="/css/index.css" media="screen" />
   
-  
-  <link rel="stylesheet" type="text/css" href="/css/index.css" media="screen" />
-  
   <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-database.js"></script>
-  <script src="/firebase-config.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script type="text/javascript" src="/firebase-config.js"></script>  
 </head>
 
 <body>
@@ -26,19 +24,20 @@
   </header>
   
   <form class="align-form">
-    <div class="align-input">
-      <label for="email"><i class="fas fa-user"></i></label>
-      <input class="input-login" type="email" id="email" placeholder="Digite seu e-mail ou usuário">
+    <div>
+      <i class="fas fa-user"></i>
+      <input class="input-login" type="email" name="email" id="email" placeholder="Digite seu usuário">
     </div>
-    <div class="align-input">
-      <label for="password"><i class="fas fa-key"></i></label>
-      <input class="input-login" type="password" id="password" placeholder="Digite sua senha">
+    <div>
+      <i class="fas fa-key"></i>
+      <input class="input-login" type="password" name="password" id="password" placeholder="Digite sua senha">
     </div>
-    <input class="btn-login" type="button" id="sign-in" value="ENTRAR">
+    <input class="btn-login" id="sign-in" type="button" value="ENTRAR">
   </form>
   
-  <script src="./js/auth.js"></script>
-  <script src="./js/errors.js"></script>
+  <!-- <script src="./firebase-config.js"></script> -->
+  <script src="/js/auth.js"></script>
+  <script src="/js/errors.js"></script>
 </body>
 
 </html>
