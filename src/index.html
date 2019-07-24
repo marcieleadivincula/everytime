@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Everytime</title>
-    <script src="https://kit.fontawesome.com/bfa4c912f5.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/index.css" media="screen" />
-
-
+  <title>everytime</title>
+  
+  <script src="https://kit.fontawesome.com/bfa4c912f5.js"></script>
   <link rel="stylesheet" type="text/css" href="/css/index.css" media="screen" />
-
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/index.css" media="screen" />
+  
   <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-auth.js"></script>
-  <script src='https://www.gstatic.com/firebasejs/6.3.1/firebase-database.js'></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-database.js"></script>
   <script src="/firebase-config.js"></script>
 </head>
 
@@ -25,15 +25,19 @@
     </h1>
     <h3 class="header-text">Controle e gestão do seu dia</h3>
   </header>
-
+  
   <form class="align-form">
-    <label for="email">Insira seu e-mail</label>
-    <input class="input-login" type="email" id="email">
-    <label for="password">Insira sua senha</label>
-    <input class="input-login" type="password" id="password">
+    <div class="align-input">
+      <label for="email"><i class="fas fa-user"></i></label>
+      <input class="input-login" type="email" id="email" placeholder="Digite seu e-mail ou usuário">
+    </div>
+    <div class="align-input">
+      <label for="password"><i class="fas fa-key"></i></label>
+      <input class="input-login" type="password" id="password" placeholder="Digite sua senha">
+    </div>
     <input class="btn-login" type="button" id="sign-in" value="ENTRAR">
   </form>
-
+  
   <script src="./js/auth.js"></script>
   <script src="./js/errors.js"></script>
 </body>
