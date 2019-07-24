@@ -1,4 +1,5 @@
-const database = firebase.firestore();
+const database = firebase.database();
+let username = document.querySelector(".");
 
 window.onload = () => {
   getListEmployees();
