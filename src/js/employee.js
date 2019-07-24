@@ -1,41 +1,37 @@
-const database = firebase.firestore();
-const signUpBtn = document.querySelector(".register-btn");
-const emailInput = document.querySelector("#signUpEmail");
-const passwordInput = document.querySelector("#signUpPassword");
+const database = firebase.database();
+let signUpBtn = document.querySelector(".register-btn");
+let emailInput = document.querySelector(".signUpEmail");
+let passwordInput = document.querySelector(".signUpPassword");
+let profileInput = document.querySelector("#profileInput");
+let valueSelect = "";
 
-window.onload = () => {
-  typing();
-  signUpBtn.addEventListener('click', signUp);
-}
+profileInput.addEventListener('change', function () {
+    valueSelect = profileInput.value;
+    return valueSelect;
+})
 
 
-function signUp(e) {
-  e.preventDefault();
-  const email = emailInput.value;
-  const password = passwordInput.value;
-  createUser(email, password);
-}
+signUpBtn.addEventListener('click', (evt) => {
+    evt.preventDefault()
+    email = emailInput.value;
+    password = passwordInput.value;
+    console.log(email, password, valueSelect)
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+        .then((res) => {
+            saveUserInfos(email, password, valueSelect, res.user.uid);
+            console.log('entrou');
+            // window.location = 'page.html';
+        })
+        .catch((error) => {
+            console.log(error.code);
+        })
+});
 
-function createUser(email, password) {
-  firebase.auth().createUserWithEmailAndPassword(email, password)
-    .then(function (response) {
-      console.log(response.user);
-      const userId = response.user.uid;
-      database.collection('users/' + userId).set({
-        email: email
-      });
-      // createProfile(userId);
-    })
-    .catch(function (error) {
-      handleErrors(error)
-    });
-}
-
-function handleErrors(error) {
-  const errorMessage = error.message;
-  alert(errorMessage);
-}
-
-function createProfile(userId) {
-  window.location = `employee.html?id=${userId}`;
+let saveUserInfos = (email, password, select, uid) => {
+    database.ref('users/' + uid)
+        .set({
+            email: email,
+            pass: password,
+            profile: select
+        });
 }
