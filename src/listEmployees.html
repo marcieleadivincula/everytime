@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,32 +10,63 @@
   <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
   <script src='https://www.gstatic.com/firebasejs/6.3.1/firebase-database.js'></script>
   <script src="/firebase-config.js"></script>
-  
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">  
-</head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="/src/css/employee-tracker.css" media="screen" />
+ </head>
 
 <body>
-  <nav class="header-nav">
-    <a id="logout" href="#"><i class="fas fa-sign-out-alt"></i></a></li>
+  <nav class="nav-config">
+    <h1 class="logo">
+      <img src="/src/assets/logo_negativo_et.png" alt="">
+    </h1>
+    <i class="fas fa-sign-out-alt"></i>
   </nav>
-  <main class="container">
-    <ul class="list-itens font-color-white">
-      <li class="">Funcionários</li>
-      <li class="">Criar Usuário</li>
+
+  <main>
+    <ul class="sub-nav">
+      <li class="employee-tracker active">Funcionários</li>
+      <li class="employee-history">Criar Usuário</li>
     </ul>
-    <section class="">
-      <select class="listEmployees">
+    <section>
+      <select class="listEmployees employee-tracker-option align-tracker">
         <option selected value="select">Selecione</option>
       </select>
     </section>
-<<<<<<< HEAD
-=======
-
-    <section class="dataEmployee">
-
-    </section>
->>>>>>> c3c7c8479b61c0aab1a98904ca4845f6cc2711fa
-  </main>
+    <section class="employee-history-option">
+        <h4 class="employee-name AQUI TRAZ O NOME DA PESSOA">Joana</h4>
+        <h4 class="weekly-hour">Semana</h4>
+        <section class="employee-history align-history">
+          <ul class="align-ul-data">
+            <li class="align-data history-calendar">
+              <i class="far fa-calendar-alt"></i>
+              <span class="span-hour AQUI TRAZ A DATA">23/07</span>
+            </li>
+            <li class="align-data history-clock">
+              <i class="far fa-clock"></i>
+              <span class="span-hour AQUI TRAZ OS HORÁRIOS">8h/dia</span>
+            </li>
+          </ul>
+          <ul class="align-ul-data hours">
+            <li class="align-data history-check-in">
+              <p>Entrada <span class="span-hour AQUI TRAZ OS HORARIOS">8:05</span> </p>
+              <i class="fas fa-hourglass-start fas-size"></i>
+            </li>
+            <li class="align-data history-check-in-lunch">
+              <p>Almoço <span class="span-hour AQUI TRAZ OS HORARIOS">12:16</span> </p>
+              <i class="fas fa-utensils fas-size"></i>
+            </li>
+            <li class="align-data history-check-out-lunch">
+              <p>Retorno <span class="span-hour AQUI TRAZ OS HORARIOS">13:20</span> </p>
+              <i class="fas fa-utensils fas-size"></i>
+            </li>
+            <li class="align-data history-check-out">
+              <p>Saída <span class="span-hour AQUI TRAZ OS HORARIOS">18:00</span> </p>
+              <i class="fas fa-hourglass-end fas-size"></i>
+            </li>
+          </ul>
+        </section>
+  </main> 
   <script src="/src/js/listEmployees.js"></script>
 </body>
 </html>
