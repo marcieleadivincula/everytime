@@ -1,6 +1,5 @@
 const database = firebase.database();
 let signUpBtn = document.querySelector(".register-btn");
-let btnCancel = document.querySelector(".btnCancel");
 let emailInput = document.querySelector(".signUpEmail");
 let passwordInput = document.querySelector(".signUpPassword");
 let usernameInput = document.querySelector(".signUpName");
@@ -12,9 +11,6 @@ profileInput.addEventListener('change', function () {
     return valueSelect;
 })
 
-// btnCancel.addEventListener('click', (evt) => {
-    
-// })
 signUpBtn.addEventListener('click', (evt) => {
     evt.preventDefault()
     email = emailInput.value;
