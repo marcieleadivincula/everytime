@@ -185,12 +185,12 @@ body {
     color: #7385d2;
 }
 
-.history-calendar {
+.fa-calendar-alt {
     margin-bottom: 10px;
     margin-right: 10px;
 }
 
-.history-clock {
+.fa-clock {
     margin-right: 10px; 
 }
 
@@ -204,6 +204,28 @@ body {
 
 .history-check-out {
     color: #8fb56e;
+}
+
+.total-hour {
+    width: 100%;
+    background-color: #8fb56e;
+    color: white;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+}
+
+.total-hour h4{
+    margin: 0;
+}
+
+.total-hour h2{
+    margin: 0;
 }
 
 .hide {
