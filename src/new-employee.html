@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 
 <head>
+<<<<<<< HEAD:src/new-employee.html
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>everytime</title>
@@ -14,41 +15,65 @@
   <script defer src="/__/firebase/6.3.1/firebase-database.js"></script>
   
   <script defer src="/__/firebase/init.js"></script>
+=======
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-auth.js"></script>
+  <script src='https://www.gstatic.com/firebasejs/6.3.1/firebase-database.js'></script>
+  <script src="/firebase-config.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+  <link rel="stylesheet" href="/src/css/styles.css">
+
+  <!-- <script src="/firebase-config.js"></script> -->
+  <title>Novo Funcionário</title>
+>>>>>>> e49b952c62957e2bf5531403fdccd222b5f78872:src/employee.html
 </head>
 
 <body>
   <section class="container">
-    <img class="logo" src="">
     <h1 class="title">Criar usuário</h1>
     <br>
     <form>
       <div class="form-group">
         <label for="nameInput">Nome</label>
-        <input type="name" class="form-control" id="nameInput" placeholder="Nome">
+        <input type="name" class="signUpName" id="nameInput" placeholder="Nome">
       </div>
       <br>
       <div class="form-group">
         <label for="emailInput">E-mail</label>
-        <input type="email" class="form-control" id="emailInput" placeholder="E-mail">
+        <input type="email" class="signUpEmail" id="emailInput" placeholder="E-mail">
       </div>
       <br>
       <div class="form-group">
-        <label for="hourInput">Horário</label>
-        <input type="hour" class="form-control" id="hourInput" placeholder="Horário">
+        <!-- <label for="profileInput">Cargo</label> -->
+        <!-- <input type="profile" class="signUpProfile" id="profileInput" placeholder="Profile"> -->
+        <select name="profile" id="profileInput">
+          <option selected value="client">Cliente</option>
+          <option value="employee">Funcionário</option>
+        </select>
       </div>
       <br>
       <div class="form-group">
         <label for="passwordInput">Senha</label>
-        <input type="password" class="form-control" id="passwordInput" placeholder="Senha">
+        <input type="password" class="signUpPassword" id="passwordInput" placeholder="Senha">
       </div>
       <br>
     </form>
     <button class="btnCancel" id="createUserButton">Cancelar</button>
-    <button class="btnCreate" id="createUserButton">Cadastrar</button>
+    <button class="register-btn" id="createUserButton">Cadastrar</button>
     <br>
   </section>
+<<<<<<< HEAD:src/new-employee.html
   
   <script src="./js/employee.js"></script>
+=======
+
+
+>>>>>>> e49b952c62957e2bf5531403fdccd222b5f78872:src/employee.html
 </body>
 
 </html>
