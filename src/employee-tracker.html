@@ -33,27 +33,27 @@
             <section class="employee-tracker-option align-tracker">
                 <p class="day-info">Dia tal, hora tal</p>
                 <button class="btn align-btn check-in-style" id="check-in">
-                    <i class="fas fa-hourglass-start"></i>
+                    <i class="fas fa-hourglass-start fas-size-p"></i>
                     <div class="align-text-btn">
                         <h4>ENTRADA</h4>
                         <p class="check-in-hour">Clique para confirnar a Entrada</p>
                     </div>
                 </button>
-                <button class="btn align-btn check-in-lunch-style" id="lunch-in">
-                    <i class="fas fa-utensils "></i>
+                <button class="btn align-btn check-in-lunch-style fas-size-p" id="lunch-in">
+                    <i class="fas fa-utensils"></i>
                     <div class="align-text-btn">
                         <h4>ALMOÇO</h4>
                         <p class="check-in-lunch-hour">Clique para confirnar o Almoço</p>
                     </div>
                 </button>
-                <button class="btn align-btn check-out-lunch-style" id="lunch-out">
+                <button class="btn align-btn check-out-lunch-style fas-size-p" id="lunch-out">
                     <i class="fas fa-utensils "></i>
                     <div class="align-text-btn">
                         <h4>RETORNO</h4>
                         <p class="check-out-lunch-hour">Clique para confirnar o Retorno</p>
                     </div>
                 </button>
-                <button class="btn align-btn check-out-style" id="check-out">
+                <button class="btn align-btn check-out-style fas-size-p" id="check-out">
                     <i class="fas fa-hourglass-end"></i>
                     <div class="align-text-btn">
                         <h4>SAÍDA</h4>
@@ -63,9 +63,40 @@
             </section>
             
             <section class="employee-history-option hide">
-                <p>HISTÓRICO</p>
+                <h4 class="employee-name AQUI TRAZ O NOME DA PESSOA">John Doe</h4>
+                <h4 class="weekly-hour">Semana</h4>
+                <section class="employee-history align-history">
+                    <ul class="align-ul-data">
+                        <li class="align-data history-calendar">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="span-hour AQUI TRAZ A DATA">23/07</span>
+                        </li>
+                        <li class="align-data history-clock">
+                            <i class="far fa-clock"></i>
+                            <span class="span-hour AQUI TRAZ OS HORÁRIOS">8h/dia</span>
+                        </li>
+                    </ul>
+                    <ul class="align-ul-data hours">
+                        <li class="align-data history-check-in">
+                            <p>Entrada <span class="span-hour AQUI TRAZ OS HORARIOS">8:05</span> </p>
+                            <i class="fas fa-hourglass-start fas-size"></i>
+                        </li>
+                        <li class="align-data history-check-in-lunch">
+                            <p>Almoço <span class="span-hour AQUI TRAZ OS HORARIOS">12:16</span> </p>
+                            <i class="fas fa-utensils fas-size"></i>
+                        </li>
+                        <li class="align-data history-check-out-lunch">
+                            <p>Retorno <span class="span-hour AQUI TRAZ OS HORARIOS">13:20</span> </p>
+                            <i class="fas fa-utensils fas-size"></i>
+                        </li>
+                        <li class="align-data history-check-out">
+                            <p>Saída <span class="span-hour AQUI TRAZ OS HORARIOS">18:00</span> </p>
+                            <i class="fas fa-hourglass-end fas-size"></i>
+                        </li>
+                    </ul>
+                </section>
             </section>
-
+            
         </section>
         <script type="module" src="./ClockInOut.js"></script>
         <script src="/js/hide-menu-options.js"></script>

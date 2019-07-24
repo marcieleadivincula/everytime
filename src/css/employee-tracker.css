@@ -8,7 +8,7 @@ body {
 .nav-config {
     top: 0;
     margin: 0;
-    height: 60px;
+    height: 70px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -26,6 +26,7 @@ body {
 }
 
 .fa-sign-out-alt {
+    font-size: 20px;
     margin: 10px 0 0;
     color: white;
 }
@@ -63,7 +64,7 @@ body {
 }
 
 .align-tracker {
-    width: 70%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -119,8 +120,90 @@ body {
     justify-content: space-between;
 }
 
-.fa-hourglass-start, .fa-utensils, .fa-hourglass-end  {
+.fas-size-p  {
     font-size: 22px;
+}
+
+.employee-name {
+    color: #7385d2;
+    margin: 10px 0 0 20px;
+}
+
+.weekly-hour {
+    color: #7385d2;
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+.align-history p {
+    margin: 0;
+}
+
+.align-ul-data{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.align-data {
+    display: flex;
+    align-items: center;
+}
+
+.span-hour{
+    font-weight: 700;
+}
+
+.fas-size {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.align-history {
+    padding: 20px;
+    display: flex;
+    justify-content:space-between;
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #f9faff;
+}
+
+.align-tracker-history {
+    display: flex;
+    flex-direction: column;
+}
+
+.hours {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.history-check-in, .history-clock, .history-calendar {
+    color: #7385d2;
+}
+
+.history-calendar {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.history-clock {
+    margin-right: 10px; 
+}
+
+.history-check-in-lunch {
+    color: #c7a669;
+}
+
+.history-check-out-lunch {
+    color: #f4a881;
+}
+
+.history-check-out {
+    color: #8fb56e;
 }
 
 .hide {
