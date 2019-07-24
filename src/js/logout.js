@@ -1,11 +1,13 @@
-const signOut = document.querySelector ('#logoutBtn');
 const database = firebase.database();
+const signOut = document.querySelector('#logoutBtn');
 
-signOut.addEventListener('click', (event) => {
-  event.preventDefault();
-  firebase.auth().signOut().then(() => {
+window.onload = () => {
+  signOut.addEventListener('click', () => {
+    console.log('ok')
+    firebase.auth().signOut().then(() => {
       window.location = 'index.html'
-  }).catch(function (error) {
+    }).catch(function (error) {
       alert('Ocorreu um erro, tente novamente.')
-  });
-})
+    });
+  })
+}
