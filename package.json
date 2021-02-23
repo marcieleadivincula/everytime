@@ -17,11 +17,11 @@
   },
   "homepage": "https://github.com/marcieleadivincula/everytime#readme",
   "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^6.2.0",
+    "chai": "^4.3.0",
+    "mocha": "^6.2.3",
     "nyc": "^14.1.1"
   },
   "dependencies": {
-    "firebase": "^6.3.1"
+    "firebase": "^6.6.2"
   }
 }
